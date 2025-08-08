@@ -1,0 +1,119 @@
+
+/* Strictly following design.json */
+body {
+  background: #FFFFFF;
+  color: #202124;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main, .page {
+  background: #FFFFFF;
+  padding: 24px;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #202124;
+  margin-bottom: 16px;
+}
+h2, .section-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #202124;
+  margin-bottom: 8px;
+}
+form {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+}
+input, textarea, select {
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #202124;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  outline: none;
+}
+input:focus, textarea:focus, select:focus {
+  border: 1.5px solid #4285F4;
+}
+button {
+  font-size: 16px;
+  color: #EA4335;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+button .icon {
+  font-size: 16px;
+  color: #EA4335;
+}
+button:hover {
+  text-decoration: underline;
+}
+ul#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #E0E0E0;
+}
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9AA0A6;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.task-text {
+  font-size: 16px;
+  color: #202124;
+  font-weight: 400;
+}
+.task-time {
+  font-size: 14px;
+  color: #34A853;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.task-time .icon {
+  font-size: 14px;
+  color: #34A853;
+}
+.task-tag {
+  font-size: 14px;
+  font-weight: 400;
+}
+.task-tag.fitness {
+  color: #EA4335;
+}
+.task-tag.appointments {
+  color: #4285F4;
+}
+.task-tag.groceries {
+  color: #FBBC05;
+}
+.task-emoji {
+  font-size: 16px;
+}
+.icon {
+  color: #9AA0A6;
+}
+.completed {
+  text-decoration: line-through;
+  color: #5F6368;
+}

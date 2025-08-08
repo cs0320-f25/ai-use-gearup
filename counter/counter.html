@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="counter.css">
+    </head>
+
+<body>
+    <div class="container">
+        <h1>Counter App </h1>
+        <div id="counter" class="counter"> 0
+    </div>
+    <div class="buttons">
+        <button id="increment"> Increment </button>
+        <button id="decrement"> Decrement </button>
+        <button id="reset"> Reset </button>
+    </div>
+
+    <script>
+        // Get references to HTML elements
+        var counter = document.getElementById('counter'); // The display element for the counter value
+        var incrementBtn = document.getElementById('increment'); // Button to increase counter
+        var decrementBtn = document.getElementById('decrement'); // Button to decrease counter
+        var resetBtn = document.getElementById('reset'); // Button to reset counter to 0
+        
+        // Initialize counter variable to track current count
+        var count = 0;
+        
+        // Function to update the counter display on the page
+        function updateCounter() {
+            counter.textContent = count.toString();
+        }
+        
+        // Add click event listener to increment button
+        incrementBtn.addEventListener('click', function () {
+            count++;
+            updateCounter();
+        });
+        
+        // Add click event listener to decrement button
+        decrementBtn.addEventListener('click', function () {
+            if (count > 0) {
+                count--;
+                updateCounter();
+            }
+        });
+        
+        // Add click event listener to reset button
+        resetBtn.addEventListener('click', function () {
+            count = 0;
+            updateCounter();
+        }); 
+  </script>
+</body>
+
+</html>
