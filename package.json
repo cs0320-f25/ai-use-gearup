@@ -1,0 +1,17 @@
+{
+  "name": "copilot-training-cli-random",
+  "version": "1.0.0",
+  "main": "dist/random.js",
+  "types": "dist/random.d.ts",
+  "bin": {
+    "random": "dist/random.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/random.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
