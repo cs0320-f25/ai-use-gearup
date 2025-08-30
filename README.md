@@ -1,3 +1,43 @@
+# TODO CLI Usage
+
+This project includes a command-line TODO application. You can use the following commands:
+
+### Add a Task
+
+```
+npx ts-node src/example.ts add "Task Name" "Description" "YYYY-MM-DD"
+```
+
+Example:
+
+```
+npx ts-node src/example.ts add "TA camp" "developing copilot gearup" "2025-08-30"
+```
+
+### Delete a Task by Name
+
+```
+npx ts-node src/example.ts delete "Task Name"
+```
+
+Example:
+
+```
+npx ts-node src/example.ts delete "TA camp"
+```
+
+### List All Tasks (Sorted by Due Date)
+
+```
+npx ts-node src/example.ts list
+```
+
+### Notes
+
+- All commands must be run from the project root.
+- Dates must be in `YYYY-MM-DD` format for best results.
+- You can also compile with `tsc` and run with `node dist/example.js ...` if you prefer.
+
 Source code for counter and typing mini-projects: https://www.geeksforgeeks.org/typescript/typescript-projects/
 
 # Title
