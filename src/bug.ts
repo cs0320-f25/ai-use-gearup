@@ -4,7 +4,7 @@
 export function brokenIsPalindrome(str: string): boolean {
   const cleaned = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
   for (let i = 0; i < Math.floor(cleaned.length / 2); i++) {
-    if (cleaned[i] !== cleaned[cleaned.length - i]) { 
+    if (cleaned[i] !== cleaned[cleaned.length - i - 1]) { 
       return false;
     }
   }
